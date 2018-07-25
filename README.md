@@ -33,9 +33,9 @@ All code in this repository is licensed under [GPL-3.0](LICENSE).
 
 ## How to Cite
 
-If you use our line extraction approach in your research, please cite our [paper](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf) that describes the approach:
+If you use our line extraction method in your research, please cite our [paper](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf) that describes the approach:
 ```
 A Maximum Likelihood Approach to Extract Polylines from 2-D Laser Range Scans
 Alexander Schaefer, Daniel Büscher, Lukas Luft, Wolfram Burgard
-IEEE International Conference on Intelligent Robots 2018, Madrid, Spain]
+IEEE International Conference on Intelligent Robots 2018, Madrid, Spain
 ```
