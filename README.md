@@ -2,7 +2,7 @@
 
 ![Line extraction example](./line_extraction.svg)
 
-Exemplary result of the polyline extraction method applied to a scan captured in an office. The scan consists of \num{361} rays, of which every second is displayed as a red line. Gray lines indicate maximum-range readings. The extracted polyline map, drawn as blue lines, consists of ten vertices, reducing memory requirements to less than 3%.  
+Exemplary result of our polyline extraction method applied to a scan captured in an office. The scan consists of 361 rays, of which every second is displayed as a red line. Gray lines indicate maximum-range readings. The extracted polyline map, drawn as blue lines, consists of ten vertices, reducing memory requirements to less than 3%.  
 
 ## About this Repository
 
@@ -34,6 +34,8 @@ All code in this repository is licensed under [GPL-3.0](LICENSE).
 ## How to Cite
 
 If you use our line extraction approach in your research, please cite our [paper](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf) that describes the approach:
-* [A Maximum Likelihood Approach to Extract Polylines from 2-D Laser Range Scans
+```
+A Maximum Likelihood Approach to Extract Polylines from 2-D Laser Range Scans
 Alexander Schaefer, Daniel Büscher, Lukas Luft, Wolfram Burgard
-IEEE International Conference on Intelligent Robots 2018, Madrid, Spain](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf)
+IEEE International Conference on Intelligent Robots 2018, Madrid, Spain]
+```
