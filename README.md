@@ -26,11 +26,11 @@ The code does not require compilation or installation. To run a line extraction 
 ## Repository Organization
 
 All code is located in the folder `matlab`. This folder contains multiple subfolders:
- Subfolder |  Content                                                         
------------|--------------------------------------------------------------------
- `.`       | functions and classes required to run examples and experiments   
- `data`    | laser scan files and results of experiments with Veeck's method  
- `script`  | example and experiments scripts                                  
+| Subfolder | Content |
+| --- | --- |
+| `.` | functions and classes required to run examples and experiments |
+| `data` | laser scan files and results of experiments with Veeck's method |
+| `script` | example and experiments scripts |
 
 ## Supported Platforms and MATLAB Versions
 
