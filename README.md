@@ -31,7 +31,7 @@ All code is located in the folder `matlab`. This folder contains multiple subfol
 | --- | --- |
 | `.` | functions and classes required to run examples and experiments |
 | `data` | laser scan files and results of experiments with Veeck's method |
-| `script` | example and experiments scripts |
+| `script` | example scripts and experiments scripts |
 
 ## Supported Platforms and MATLAB Versions
 
