@@ -23,6 +23,15 @@ The code does not require compilation or installation. To run a line extraction 
 1. Add the folder `matlab` and all subfolders to your MATLAB searchpath.
 1. Run the example script `matlab/extrlin.m`.
 
+## Repository Organization
+
+All code is located in the folder `matlab`. This folder contains multiple subfolders:
+| Subfolder |  Content                                                         |
+|-----------|------------------------------------------------------------------|
+| `.`       | functions and classes required to run examples and experiments   |
+| `data`    | laser scan files and results of experiments with Veeck's method  |
+| `script`  | example and experiments scripts                                  |
+
 ## Supported Platforms and MATLAB Versions
 
 It is not bound to any specific platform. It was tested on MATLAB R2017b and MATLAB R2018a on Windows and Linux systems. If you experience any problems, please do not hesitate to [create an issue](https://github.com/acschaefer/ple/issues/new).
