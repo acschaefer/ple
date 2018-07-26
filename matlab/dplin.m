@@ -1,6 +1,6 @@
 function [ d ] = dplin( p, v1, v2 )
-%DPLIN Closest distance between point and line.
-%   TODO should take endpoints into account
+% DPLIN Closest distance between point and line.
+
     p = [p, 0];
     v1 = [v1, 0];
     v2 = [v2, 0];
