@@ -2,7 +2,10 @@
 matlabdir = fileparts(mfilename('fullpath'));
 addpath(fullfile(matlabdir, '.'))
 addpath(fullfile(matlabdir, '..', 'data', 'carmen'))
-addpath(fullfile(matlabdir, '..', 'output'))
+outputdir = fullfile(matlabdir, '..', 'output');
+if exist(outputdir,'dir')
+    addpath(fullfile(matlabdir, '..', 'output'))
+end
 addpath(fullfile(matlabdir, 'script'))
 
 % Clear all created variables.
