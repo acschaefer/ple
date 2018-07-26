@@ -26,28 +26,28 @@ The code does not require compilation or installation. To run a line extraction 
 
 ## Repository Organization
 
-All code is located in the folder `matlab`. This folder contains multiple subfolders:
+The repository is organized using the following folders:
 
-| Subfolder | Content |
+| Folder | Content |
 | --- | --- |
 | `matlab` | functions and classes required to run examples and experiments |
 | `matlab/script` | example scripts and experiments scripts |
 | `data` | laser scan files and results of experiments with Veeck's method |
 | `output` | output of our experiments using various methods, see below |
 
-## Reproduce our experimental results
+## How to Reproduce Our Experiments
 
-To reproduce our experimental results run the following chain of scripts:
+To reproduce our experimental results, run the following scripts one after the other:
 
 | Script | Description |
 | --- | --- |
-| `startup` | Setup MATLAB searchpath. |
-| `gendata` | Create real-world dataset from carmen files and simulated dataset using randomized polygons. |
-| `runexp`  | Run all methods on all laserscans in the datasets with various parameter settings. |
-| `evalexp` | Calculate various figure of merits from the results. |
-| `ploteval` | Create the paper plots. |
+| `startup` | Set up MATLAB search path. |
+| `gendata` | Create real-world dataset from Carmen files and simulated dataset using randomized polygons. |
+| `runexp`  | Apply all line extraction methods to all datasets with various parameter settings. |
+| `evalexp` | Calculate various figures of merits from the results. |
+| `ploteval` | Create the evaluation plots. |
 
-After running `evalexp` single results can be plotting e.g. with `inspectresult(1,1,1,1)`.
+After running `evalexp`, individual results can be plotted using the function `inspectresult`, e.g. `inspectresult(1,1,1,1)`. See function help for details.
 
 ## Supported Platforms and MATLAB Versions
 
