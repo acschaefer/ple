@@ -48,7 +48,7 @@ To reproduce our experimental results, run the following scripts one after the o
 | `ploteval` | Create the evaluation plots. |
 
 Most of these scripts assume that the `matlab` folder is the MATLAB run directory.
-After running `evalexp`, individual results can be plotted using the function `inspectresult`, e.g. `inspectresult(1,1,1,1)`. See function help for details.
+After running `evalexp`, individual results can be plotted using the function [`inspectresult`](matlab/script/inspectresult.m), e.g. `inspectresult(1,1,1,1)`. See function help for details.
 Note that the `.mat` files containing the results from the above steps are already present in the `output` folder, such that any of the steps can be directly executed.
 
 ## Supported Platforms and MATLAB Versions
