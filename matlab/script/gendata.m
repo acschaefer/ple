@@ -29,7 +29,7 @@ end
 
 %% Create real-world dataset.
 % Find all available Carmen log files.
-wb = waitbar(0, 'Creating real-world dataset ...');
+wb = waitbar(0, 'Creating real-world dataset ...', 'Name', mfilename);
 wbcleaner = onCleanup(@() close(wb));
 file = dir(fullfile('..','data','carmen'));
 datafile = {};
