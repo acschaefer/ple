@@ -1,2 +1,5 @@
 # MATLAB autosave files
 *.asv
+
+# MATLAB data files
+*.mat
