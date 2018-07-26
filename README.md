@@ -37,7 +37,7 @@ The repository is organized using the following folders:
 
 ## How to Reproduce Our Experiments
 
-To reproduce our experimental results, run the following scripts one after the other:
+To reproduce our experimental results, run the following scripts one after the other from the folder `matlab`:
 
 | Script | Description |
 | --- | --- |
