@@ -1,85 +1,44 @@
-# Description of 2-D lidar indoor datasets
+# 2-D Lidar Indoor Datasets from Radish
 
-All datasets are provided in the Carmen logging format. 
-Only the corrected files are provided here, while the raw files are available on the original page.
-See http://carmen.sourceforge.net/home.html for more information.
+The datasets below taken from [Radish: The Robotics Data Set Repository](http://radish.sourceforge.net/). They contain odometry and 2-D lidar data. They are provided in the [Carmen logging format](http://carmen.sourceforge.net/logger_playback.html).
 
-To load a dataset into the MATLAB workspace, use the function `carmenread`.
+To load a dataset into the MATLAB workspace, use the function [`carmenread`](matlab/carmenread.m).
 
-## MIT, CSAIL Building
+## MIT, CSAIL Building (`csail-corrected.log.gz`)
 ![csail-corrected](csail-corrected.png)
 
-`csail-corrected.log.gz` contains the lidar data along with the 
-  ground-truth trajectory of the robot.
-
-## Freiburg Campus
+## Freiburg Campus (`freiburg-campus-corrected.log.gz`)
 ![freiburg-campus-corrected](freiburg-campus-corrected.png)
 
-`freiburg-campus-corrected.log.gz` contains the lidar data along with the 
-  ground-truth trajectory of the robot.
-
-## Intel Reserach Lab
+## Intel Reserach Lab (`intel-corrected.log.gz`)
 ![intel-corrected](intel-corrected.png)
 
-`intel-corrected.log.gz` contains the lidar data along with the 
-   ground-truth trajectory of the robot.
-
-## University of Washington, Seattle
+## University of Washington, Seattle (`seattle-corrected.log.gz`)
 ![seattle-corrected](seattle-corrected.png)
 
-`seattle-corrected.log.gz` contains the lidar data along with the 
-   ground-truth trajectory of the robot.
-
-## MIT Infinite Corridor Dataset
+## MIT Infinite Corridor Dataset (`infinite-corridor-corrected.log.gz`)
 ![infinite-corridor-corrected](infinite-corridor-corrected.png)
 
-`infinite-corridor-corrected.log.gz` contains the lidar data along with 
-  the ground-truth trajectory of the robot.
-
-## Örebro University
+## Örebro University (`orebro-corrected.log.gz`)
 ![orebro-corrected](orebro-corrected.png)
 
-`orebro-corrected.log.gz` contains the lidar data along with the
-  ground-truth trajectory of the robot.
-
-## Belgioioso Castle
+## Belgioioso Castle (`belgioioso-corrected.log.gz`)
 ![belgioioso-corrected](belgioioso-corrected.png)
 
-`belgioioso-corrected.log.gz` contains the lidar data along with the 
-  ground-truth trajectory of the robot.
-
-## FHW Museum
+## FHW Museum (`fhw-corrected.log.gz`)
 ![fhw-corrected](fhw-corrected.png)
 
-`fhw-corrected.log.gz` contains the lidar data along with the 
-  ground-truth trajectory of the robot.
-
-## University of Austin, ACES building
+## University of Austin, ACES building (`aces-corrected.log.gz`)
 ![aces-corrected](aces-corrected.png)
 
-`aces-corrected.log.gz` contains the lidar data along with the 
-  ground-truth trajectory of the robot.
-
-## Edmonton Convention Centre
+## Edmonton Convention Centre (`edmonton-corrected.log.gz`)
 ![edmonton-corrected](edmonton-corrected.png)
 
-`edmonton-corrected.log.gz` contains the lidar data along with the
-  ground-truth trajectory of the robot.
-
-## University of Freiburg, Building 079
+## University of Freiburg, Building 079 (`freiburg-079-corrected.log.gz`)
 ![freiburg-079-corrected](freiburg-079-corrected.png)
 
-`freiburg-079-corrected.log.gz` contains the lidar data along with the
-  ground-truth trajectory of the robot.
-
-## University of Freiburg, Building 101
+## University of Freiburg, Building 101 (`freiburg-101-corrected.log.gz`)
 ![freiburg-101-corrected](freiburg-101-corrected.png)
 
-`freiburg-101-corrected.log.gz` contains the lidar data along with the
-  ground-truth trajectory of the robot.
-
-## Acapulco Convention Center
+## Acapulco Convention Center (`acapulco-corrected.log.gz`)
 ![acapulco-corrected](acapulco-corrected.png)
-
-`acapulco-corrected.log.gz` contains the lidar data along with the 
-  ground-truth trajectory of the robot in the Carmen format.
