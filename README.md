@@ -19,9 +19,10 @@ For a detailed description of our method and the experiments, please have a look
 ## Quick Start Instructions
 
 The code does not require compilation or installation. To run a line extraction example, follow these steps:
+
 1. Clone or [download](https://github.com/acschaefer/ple/archive/master.zip) the repository.
-1. Add the folder `matlab` and all subfolders to your MATLAB searchpath.
-1. Run the example script `matlab/extrlin.m`.
+2. Run the `startup` script in the `matlab` folder to set up your MATLAB searchpath.
+3. Run the example script `extrlin`.
 
 ## Repository Organization
 
@@ -29,9 +30,24 @@ All code is located in the folder `matlab`. This folder contains multiple subfol
 
 | Subfolder | Content |
 | --- | --- |
-| `.` | functions and classes required to run examples and experiments |
+| `matlab` | functions and classes required to run examples and experiments |
+| `matlab/script` | example scripts and experiments scripts |
 | `data` | laser scan files and results of experiments with Veeck's method |
-| `script` | example scripts and experiments scripts |
+| `output` | output of our experiments using various methods, see below |
+
+## Reproduce our experimental results
+
+To reproduce our experimental results run the following chain of scripts:
+
+| Script | Description |
+| --- | --- |
+| `startup` | Setup MATLAB searchpath. |
+| `gendata` | Create real-world dataset from carmen files and simulated dataset using randomized polygons. |
+| `runexp`  | Run all methods on all laserscans in the datasets with various parameter settings. |
+| `evalexp` | Calculate various figure of merits from the results. |
+| `ploteval` | Create the paper plots. |
+
+After running `evalexp` single results can be plotting e.g. with `inspectresult(1,1,1,1)`.
 
 ## Supported Platforms and MATLAB Versions
 
