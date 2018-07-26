@@ -2,7 +2,7 @@
 
 The datasets below taken from [Radish: The Robotics Data Set Repository](http://radish.sourceforge.net/). They contain odometry and 2-D lidar data. They are provided in the [Carmen logging format](http://carmen.sourceforge.net/logger_playback.html).
 
-To load a dataset into the MATLAB workspace, use the function [`carmenread`](matlab/carmenread.m).
+To load a dataset into the MATLAB workspace, use the function [`carmenread`](../../matlab/carmenread.m).
 
 ## MIT, CSAIL Building (`csail-corrected.log.gz`)
 ![csail-corrected](csail-corrected.png)
