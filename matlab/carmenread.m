@@ -24,7 +24,7 @@ function [odo,ls] = carmenread(file)
 %      odoplot(odo.data)
 %      scatter(lsconcat(ls), '.')
 %
-%   See also PCDREAD, INTERPODO, LASERSCAN2.
+%   See also PCREAD, LASERSCAN2.
 
 % Copyright 2016-2018 Alexander Schaefer
 

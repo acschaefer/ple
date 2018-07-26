@@ -1,6 +1,7 @@
 classdef lslns < handle
-    %LINES Handle class holding lines with laserscan-point associations
-    %   TODO: This class can probably resolved into laserscan2?
+    % LSLNS Handle class holding lines with laserscan-point associations.
+    
+    % Copyright 2017-2018 Daniel Buescher
     
     properties
         ls

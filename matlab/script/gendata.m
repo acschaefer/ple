@@ -1,5 +1,5 @@
 function gendata
-% GENDATA Create datasets to test line extraction from laser scan.
+% GENDATA Create datasets to evaluate line extraction from laser scan.
 
 %% Set parameters.
 % Make random number generation predictable.
@@ -19,7 +19,7 @@ sa = deg2rad(0.2);
 outdir = fullfile('..','output');
 
 % Define the names of the datasets.
-datasetname = {'real','sim'};
+datasetname = {'real','sim'}; %#ok<NASGU>
 
 % Create the output directory.
 [errorcode,msg] = mkdir(outdir);
@@ -61,7 +61,7 @@ for i = 1 : nsc*ndf
     lssim = [lssim, polymap({pg(i)}).samplels(lsinit,sr,sa)]; %#ok<AGROW>
     waitbar(i/(nsc*ndf), wb);
 end
-ls = [lsreal; lssim];
+ls = [lsreal; lssim]; %#ok<NASGU>
 
 %% Write datasets.
 % Write the laser scans to a MAT file.

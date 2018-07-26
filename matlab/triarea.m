@@ -11,7 +11,7 @@ function a = triarea(c)
 %   Example:
 %      a = triarea(rand(10,6))
 %
-%   See also POLYAREA, TRIALT, TRILEN.
+%   See also POLYAREA.
 
 % Copyright 2017 Alexander Schaefer
 
