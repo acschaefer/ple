@@ -22,7 +22,7 @@ save(resultfile, 'n', 'algorithmname')
 
 %% Extract lines from datasets.
 % Read datasets.
-dataset = load(fullfile('..','output','dataset.mat'));
+dataset = load(fullfile('output','dataset.mat'));
 ls = dataset.ls;
 datasetname = dataset.datasetname;
 
@@ -31,7 +31,7 @@ disp('Extracting lines from datasets ...')
 pm = repmat(polymap,[size(ls,2),size(ls,1),numel(n),numel(algorithmname)]);
 t = NaN(size(pm));
 try
-    for isc = 1 : size(ls,2)
+    parfor isc = 1 : size(ls,2)
         % Loop over all datasets.
         pmi = repmat(polymap, [size(ls,1),numel(n),numel(algorithmname)]);
         ti = NaN(size(pmi));

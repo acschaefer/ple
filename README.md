@@ -33,7 +33,7 @@ The repository is organized using the following folders:
 | `data` | laser scan files and results of experiments with Veeck's method |
 | `matlab` | functions and classes required to run examples and experiments |
 | `matlab/script` | example scripts and experiments scripts |
-| `matlab/output` | output of our experiments using various methods, see below |
+| `matlab/output` | output of our experiments, see below |
 
 ## How to Reproduce Our Experiments
 
