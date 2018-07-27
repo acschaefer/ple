@@ -6,7 +6,7 @@ Exemplary result of our polyline extraction method applied to a scan captured in
 
 ## About this Repository
 
-This repository contains the [MATLAB](https://www.mathworks.com/products/matlab.html) implementation of [our maximum likelihood approach to extract polylines from 2-D range scans](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18icra.pdf). It also comprises the scripts we used in the experiments to compare our method to several state-of-the-art line extractors.
+This repository contains the [MATLAB](https://www.mathworks.com/products/matlab.html) implementation of [our maximum likelihood approach to extract polylines from 2-D range scans](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf). It also comprises the scripts we used in the experiments to compare our method to several state-of-the-art line extractors.
 
 ## The Algorithm in a Nutshell
 
