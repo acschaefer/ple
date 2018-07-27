@@ -16,7 +16,7 @@ sr = 0.03;
 sa = deg2rad(0.2);
 
 % Define directory where to write the extracted log files.
-outdir = fullfile('..','output');
+outdir = 'output';
 
 % Define the names of the datasets.
 datasetname = {'real','sim'}; %#ok<NASGU>

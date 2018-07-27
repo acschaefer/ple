@@ -3,14 +3,14 @@ function ploteval
 
 %% Load data.
 % Load extracted maps.
-pmdata = load(fullfile('..','output','extrlin.mat'));
+pmdata = load(fullfile('output','extrlin.mat'));
 pm = pmdata.pm;
 n = pmdata.n;
 t = pmdata.t;
 algorithmname = pmdata.algorithmname;
 
 % Load evaluation data.
-evaluation = load(fullfile('..','output','eval.mat'));
+evaluation = load(fullfile('output','eval.mat'));
 rmse = evaluation.rmse;
 rmsec = evaluation.rmsec;
 f = evaluation.f;
@@ -57,7 +57,6 @@ function makeplot(title, ytitle, fname, n, pm, algorithmname, data)
         errorbar(n,mdata(:,ia),edata(:,ia)./sqrt(ndata(:,ia)),...
             'LineWidth',lw)
     end
-    %plot(n,mdata,'LineWidth',2)
     mnveeck = mean(arrayfun(@(x) size(x.vertex,1), pm(:,6,1)));
     errorbar(mnveeck,mdata(1,6),edata(1,6)./sqrt(ndata(1,6)),...
         'LineWidth',lw)
@@ -65,6 +64,6 @@ function makeplot(title, ytitle, fname, n, pm, algorithmname, data)
     xlabel('n')
     ylabel(ytitle)
     legend(algorithmname)
-    fname = fullfile('..','output',[fname,'.fig']);
+    fname = fullfile('output',[fname,'.fig']);
     savefig(fig, fname)
 end

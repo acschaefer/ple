@@ -3,12 +3,12 @@ function evalexp
 
 %% Evaluate experimental results.
 % Load dataset.
-dataset = load(fullfile('..','output','dataset.mat'));
+dataset = load(fullfile('output','dataset.mat'));
 ls = dataset.ls;
 pgt = dataset.pg;
 
 % Load experimental results.
-pmdata = load(fullfile('..','output','extrlin.mat'));
+pmdata = load(fullfile('output','extrlin.mat'));
 pm = pmdata.pm;
 algorithmname = pmdata.algorithmname;
 
@@ -111,7 +111,7 @@ for ids = 1 : size(pm,1)
 end
 
 %% Save evaluation.
-evalfile = fullfile('..', 'output','eval.mat');
+evalfile = fullfile('output','eval.mat');
 save(evalfile, 'rmse', 'rmsec', 'f', 'fnr', 'a', 'iou');
 
 end

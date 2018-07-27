@@ -10,7 +10,7 @@ algorithmname = {'visvalingam','end2pm','maxprob','itepf','splam','veeck'};
 
 %% Create result file.
 % Create the output directory.
-outdir = fullfile('..','output');
+outdir = 'output';
 [errorcode,msg] = mkdir(outdir);
 if errorcode < 1
     error(['Failed to create output directory ''', outdir, ''': ', msg])
@@ -31,7 +31,7 @@ disp('Extracting lines from datasets ...')
 pm = repmat(polymap,[size(ls,2),size(ls,1),numel(n),numel(algorithmname)]);
 t = NaN(size(pm));
 try
-    parfor isc = 1 : size(ls,2)
+    for isc = 1 : size(ls,2)
         % Loop over all datasets.
         pmi = repmat(polymap, [size(ls,1),numel(n),numel(algorithmname)]);
         ti = NaN(size(pmi));
