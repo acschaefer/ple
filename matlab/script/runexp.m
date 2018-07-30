@@ -82,8 +82,10 @@ try
                     %#ok<PFBNS>
                 pmi(ids,ipm,6,1) = log2polymap(...
                     log, ls(ids,isc).start2cart(1,:)-30);
-                filet = fopen(strrep(log, 'lines_', 'time_'), 'r');
-                ti(ids,ipm,6,1) = fscanf(filet, '%f');
+                filename = strrep(log, 'lines_', 'time_');
+                file = fopen(filename, 'r');
+                ti(ids,ipm,6,1) = fscanf(file, '%f');
+                fclose(file);
             end
         end
 
