@@ -37,7 +37,7 @@ for ids = 1 : size(pm,1)
             for ia = 1 : size(pm,3)
                 % Veeck is only stored for ipm == 1
                 ipm1 = ipm;
-                if strcmp(algorithmname{ia}, 'veeck')
+                if strcmp(algorithmname{ia}, 'VB')
                     ipm1 = 1;
                 end
                 retc = retc & isfinite(lsi.xpm(pm(ids,isc,ia,ipm1)));

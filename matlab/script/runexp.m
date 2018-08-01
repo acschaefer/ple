@@ -6,7 +6,7 @@ function runexp
 n = [10,20,30,40,50];
 
 % Define the algorithms to use for line extraction.
-algorithmname = {'visvalingam','end2pm','maxprob','itepf','splam','veeck'};
+algorithmname = {'VVL','PLE','PLE+','IEF','SAM','VB'};
 
 %% Create result file.
 % Create the output directory.
