@@ -43,12 +43,12 @@ To reproduce our experimental results, run the following scripts one after the o
 | --- | --- |
 | `startup` | Set up MATLAB search path. |
 | `gendata` | Create real-world dataset from Carmen files and simulated dataset using randomized polygons. |
-| `runexp`  | Apply all line extraction methods to all datasets with various parameter settings. |
+| `runexp`  | Apply all line extraction methods to all datasets with various parameter settings. This script usually runs for a few hours until completion. |
 | `evalexp` | Calculate various figures of merits from the results. |
 | `ploteval` | Create the evaluation plots. |
 
 After running `evalexp`, individual results can be plotted using the function [`inspectresult`](matlab/script/inspectresult.m), e.g. `inspectresult(1,1,1,1)`. See function help for details.
-Note that the `.mat` files containing the results from the above steps are already present in the `output` folder, such that any of the steps can be directly executed.
+Note that the `.mat` and `.fig` files containing the results from the above steps are already present in the `output` folder. Consequently, every script can be directly executed.
 
 ## Supported Platforms and MATLAB Versions
 
