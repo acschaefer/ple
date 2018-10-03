@@ -1,12 +1,12 @@
 # PLE: Probabilistic Line Extraction from 2-D Laser Range Scans
 
-![Line extraction example](./line_extraction.svg)
+![Line extraction example](./doc/line_extraction.svg)
 
 Exemplary result of our polyline extraction method applied to a scan captured in an office. The scan consists of 361 rays, of which every second is displayed as a red line. Gray lines indicate maximum-range readings. The extracted polyline map, drawn as blue lines, consists of ten vertices, reducing memory requirements to less than 3%.  
 
 ## About this Repository
 
-This repository contains the [MATLAB](https://www.mathworks.com/products/matlab.html) implementation of [our maximum likelihood approach to extract polylines from 2-D range scans](./ple_iros2018.pdf). It also comprises the scripts we used in the experiments to compare our method to several state-of-the-art line extractors.
+This repository contains the [MATLAB](https://www.mathworks.com/products/matlab.html) implementation of [our maximum likelihood approach to extract polylines from 2-D range scans](./doc/ple_iros2018.pdf). It also comprises the scripts we used in the experiments to compare our method to several state-of-the-art line extractors.
 
 ## The Algorithm in a Nutshell
 
@@ -14,8 +14,8 @@ Our approach extracts polylines from 2-D laser range scans. In contrast to preva
 1. **Polyline Extraction.** Polyline extraction starts by connecting all neighboring scan endpoints to form a set of initial polylines. It then iteratively removes the vertex that incurs the least error in terms of measurement probability until it reaches a given threshold. The result is a set of polylines whose vertex locations coincide with the locations of a subset of the scan endpoints. 
 1. **Polyline Optimization.** To do away with the limitation that vertex locations coincide with endpoint locations, we formulate an optimization problem that moves the vertices to the positions that maximize the measurement probability of the scan. We call this latter process polyline optimization.
 
-For a short illustration of the algorithm, please take a look at the [Powerpoint presentation from IROS 2018](./ple_iros2018.pptx).
-For a detailed description of our method and the experiments, consult our [paper](./ple_iros2018.pdf).
+For a short illustration of the algorithm, please take a look at the [Powerpoint presentation from IROS 2018](./doc/ple_iros2018.pptx).
+For a detailed description of our method and the experiments, consult our [paper](./doc/ple_iros2018.pdf).
 
 ## Quick Start Instructions
 
@@ -61,10 +61,10 @@ All code in this repository is licensed under [GPL-3.0](LICENSE).
 
 ## How to Cite
 
-If you use our line extraction method in your research, please cite our [paper](./ple_iros2018.pdf) that describes the approach:
+If you use our line extraction method in your research, please cite our [paper](./doc/ple_iros2018.pdf) that describes the approach:
 ```
 A Maximum Likelihood Approach to Extract Polylines from 2-D Laser Range Scans
 Alexander Schaefer, Daniel Büscher, Lukas Luft, Wolfram Burgard
 IEEE International Conference on Intelligent Robots 2018, Madrid, Spain
 ```
-[BibTeX](./ple_iros2018.bib)
+[BibTeX](./doc/ple_iros2018.bib)
