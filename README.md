@@ -67,4 +67,4 @@ A Maximum Likelihood Approach to Extract Polylines from 2-D Laser Range Scans
 Alexander Schaefer, Daniel Büscher, Lukas Luft, Wolfram Burgard
 IEEE International Conference on Intelligent Robots 2018, Madrid, Spain
 ```
-[BibTeX](http://www2.informatik.uni-freiburg.de/~aschaef/bib/schaefer18iros.bib)
+[BibTeX](./ple_iros2018.bib)
