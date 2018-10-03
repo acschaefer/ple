@@ -6,7 +6,7 @@ Exemplary result of our polyline extraction method applied to a scan captured in
 
 ## About this Repository
 
-This repository contains the [MATLAB](https://www.mathworks.com/products/matlab.html) implementation of [our maximum likelihood approach to extract polylines from 2-D range scans](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf). It also comprises the scripts we used in the experiments to compare our method to several state-of-the-art line extractors.
+This repository contains the [MATLAB](https://www.mathworks.com/products/matlab.html) implementation of [our maximum likelihood approach to extract polylines from 2-D range scans](./ple_iros2018.pdf). It also comprises the scripts we used in the experiments to compare our method to several state-of-the-art line extractors.
 
 ## The Algorithm in a Nutshell
 
@@ -15,7 +15,7 @@ Our approach extracts polylines from 2-D laser range scans. In contrast to preva
 1. **Polyline Optimization.** To do away with the limitation that vertex locations coincide with endpoint locations, we formulate an optimization problem that moves the vertices to the positions that maximize the measurement probability of the scan. We call this latter process polyline optimization.
 
 For a short illustration of the algorithm, please take a look at the [Powerpoint presentation from IROS 2018](./ple_iros2018.pptx).
-For a detailed description of our method and the experiments, consult our [paper](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf).
+For a detailed description of our method and the experiments, consult our [paper](./ple_iros2018.pdf).
 
 ## Quick Start Instructions
 
@@ -61,7 +61,7 @@ All code in this repository is licensed under [GPL-3.0](LICENSE).
 
 ## How to Cite
 
-If you use our line extraction method in your research, please cite our [paper](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf) that describes the approach:
+If you use our line extraction method in your research, please cite our [paper](./ple_iros2018.pdf) that describes the approach:
 ```
 A Maximum Likelihood Approach to Extract Polylines from 2-D Laser Range Scans
 Alexander Schaefer, Daniel Büscher, Lukas Luft, Wolfram Burgard
