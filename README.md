@@ -14,7 +14,8 @@ Our approach extracts polylines from 2-D laser range scans. In contrast to preva
 1. **Polyline Extraction.** Polyline extraction starts by connecting all neighboring scan endpoints to form a set of initial polylines. It then iteratively removes the vertex that incurs the least error in terms of measurement probability until it reaches a given threshold. The result is a set of polylines whose vertex locations coincide with the locations of a subset of the scan endpoints. 
 1. **Polyline Optimization.** To do away with the limitation that vertex locations coincide with endpoint locations, we formulate an optimization problem that moves the vertices to the positions that maximize the measurement probability of the scan. We call this latter process polyline optimization.
 
-For a detailed description of our method and the experiments, please have a look at our [paper](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf).
+For a short illustration of the algorithm, please take a look at the [Powerpoint presentation from IROS 2018](./ple_iros2018.pptx).
+For a detailed description of our method and the experiments, consult our [paper](http://ais.informatik.uni-freiburg.de/publications/papers/schaefer18iros.pdf).
 
 ## Quick Start Instructions
 
