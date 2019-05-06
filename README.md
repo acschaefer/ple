@@ -21,9 +21,10 @@ For a detailed description of our method and the experiments, consult our [paper
 
 The code does not require compilation or installation. To run a line extraction example, follow these steps:
 
-1. Clone or [download](https://github.com/acschaefer/ple/archive/master.zip) the repository.
-2. Run the `startup` script in the `matlab` folder to set up your MATLAB searchpath.
-3. Run the example script `extrlin`.
+1. Install MATLAB (R2017b and R2018a are tested) with robotics toolbox
+2. Clone or [download](https://github.com/acschaefer/ple/archive/master.zip) the repository.
+3. Run the `startup` script in the `matlab` folder to set up your MATLAB searchpath.
+4. Run the example script `extrlin`.
 
 ## Repository Organization
 
@@ -53,7 +54,7 @@ Note that the `.mat` and `.fig` files containing the results from the above step
 
 ## Supported Platforms and MATLAB Versions
 
-It is not bound to any specific platform. It was tested on MATLAB R2017b and MATLAB R2018a on Windows and Linux systems. If you experience any problems, please do not hesitate to [create an issue](https://github.com/acschaefer/ple/issues/new).
+It is not bound to any specific platform. It was tested on MATLAB R2017b and R2018a with robotics toolbox on Windows and Linux systems. Earlier versions than R2016b do not work out of the box. If you experience any problems, please do not hesitate to [create an issue](https://github.com/acschaefer/ple/issues/new).
 
 ## License
 
